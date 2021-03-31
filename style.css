@@ -1,0 +1,100 @@
+:root {
+    --title: #333;
+    --background: #ededed;
+    --button-border: rgb(22, 0, 102);
+    --button: rgba(6, 45, 218, 0.76);
+    --button-hover: rgb(129, 10, 158);
+    --button-active: #333;
+    --border: #333;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    font-family: "Roboto", sans-serif;
+    font-size: 62.5%;
+    line-height: 1.6;
+  }
+  
+  body {
+    background-color: var(--background);
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  
+  header {
+    margin-top: 3rem;
+    padding: 2rem;
+    font-size: 3.2rem;
+  }
+  
+  h1 {
+    line-height: 1.2;
+    font-family: 'Train One', cursive;
+ }
+  
+ #githubImage{
+    height: 20px;
+    width: 20px;
+    justify-content: center;
+    text-align: center;
+
+ }
+
+  .title {
+    color: var(--title);
+  }
+  
+  .container {
+    padding: 1rem;
+  }
+  
+  .button {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 6px;
+    border: 2px solid var(--button-border);
+    background-color: var(--button);
+    color: var(--background);
+    font-family: inherit;
+    font-size: 1.6rem;
+    outline: none;
+  }
+  
+  .button:hover {
+    background-color: var(--button-hover);
+  }
+  
+  .button:active {
+    background-color: var(--button-active);
+  }
+  
+  .grid {
+    display: grid;
+    max-width: 500px;
+    min-height: 500px;
+    margin: 2rem auto;
+    border: 2px solid var(--border);
+  }
+  
+  .grid-element {
+    border: 1px solid var(--border);
+    background-color: var(--background);
+  }
+  
+  @media (max-width: 450px) {
+    header {
+      font-size: 2.4rem;
+    }
+  
+    .grid {
+      max-width: 300px;
+      min-height: 300px;
+    }
+  }
